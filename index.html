@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio LCH</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/icons/css/all.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <nav class="navegador__header">
+        <div class="container nav">
+            <div class="logo">
+                <h1><a href="#secccion1"> L C H</a> </h1>
+            </div>
+            <ul>
+                <li><a href="#secccion2">SERVICIOS</a></li>
+                <li><a href="#secccion3">TRABAJOS</a></li>
+                <li><a href="#secccion4">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bienvenida" id="secccion1">
+        <div class="rap">
+            <img src="imgs/yo.jpg" alt="">
+        </div>
+         <div class="rap">
+                <div class="down animate__animated animate__bounce animate__repeat-3">
+                    <h1>HOLA</h1>
+                </div>
+                <p>Mi nombre es Laura Castaño Hoyos, estudiante de diseño gráfico en la Universidad Católica Luis Amigó, y este es mi portafolio de ilustraciones.</p>
+                <p>¡Aquí vamos!</p>
+                <a href="#secccion2"><i class="fa-solid fa-circle-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <section class="servicios" id="secccion2">
+        <div class="wrap">
+            <h1>Servicios</h1>
+            <p>Suelo usar la aplicación de procreate para hacer ilustraciones</p>
+            <div class="ima">
+            <img src="imgs/pro logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="muestras" id="secccion3">
+        <div class="wrap">
+            <h1>Muestras</h1>
+            <p>Aquí algunas muestras de mis ilustraciones</p>
+            <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="imgs/Tortuga.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/Perro.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/Gato.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/Zorro.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="imgs/gatito.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+</section>
+
+<section class="contactos" id="secccion4">
+    <div class="wrap">
+        <h1>Contáctame</h1>
+        <p>Puedes contactarme aquí</p>
+        <div class="imagenes">
+            <img src="imgs/gmail.png">
+            <p>lalamon2017@gmail.com</p>
+            <img src="imgs/wpp.png">
+            <p>313 6917397</p>
+            <img src="imgs/insta.png">
+            <a href="https://www.instagram.com/lau_casta.h/" target="_blank">lau_casta.h</a>
+        </div>
+    </div>
+</section>
+     
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
